@@ -4,7 +4,7 @@
 
 # Tema da Aula
 
-Turma Online XX - Imersão JavaScript | Semana XX | 20XX | Professora XXXXX
+Turma Online 25 - Imersão JavaScript | Semana 11 | 2023 | Professora Camila Monteiro
 
 ### Instruções
 Antes de começar, vamos organizar nosso setup.
