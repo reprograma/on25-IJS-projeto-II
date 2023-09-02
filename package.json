@@ -1,0 +1,22 @@
+{
+  "name": "on25-ijs-projeto-ii",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r   <img src=\"assets/reprograma-fundos-claros.png\" alt=\"logo reprograma\" width=\"500\">\r </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": " test "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicheleFeitosa/on25-IJS-projeto-II.git"
+  },
+  "author": "Michele Feitosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MicheleFeitosa/on25-IJS-projeto-II/issues"
+  },
+  "homepage": "https://github.com/MicheleFeitosa/on25-IJS-projeto-II#readme",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
