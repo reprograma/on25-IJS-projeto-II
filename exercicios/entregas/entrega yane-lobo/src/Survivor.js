@@ -1,5 +1,4 @@
 class Survivor {
-    exp = 0;
     constructor(name) {
         this.name = name;
         this.damage = 0;
