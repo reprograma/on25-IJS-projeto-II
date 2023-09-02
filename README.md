@@ -4,7 +4,7 @@
 
 # Tema da Aula
 
-Turma Online 21 - Imersão JavaScript | Semana 11 | 2022 | Professora: [Luara Kerlen](https://github.com/luarakerlen)
+Turma Online 25 - Imersão JavaScript | Semana 11 | 2023 | Professora: [Camila Monteiro](https://github.com/monteirocamis)
 
 ### Instruções
 
@@ -176,9 +176,6 @@ Cada zumbi tem uma chance de acertar o ferimento no sobrevivente, que aumenta de
 
 - [Exercicio](/exercicios/)
 
-### Material da aula
-
-- [Material](/material)
 
 ### Links Úteis
 
