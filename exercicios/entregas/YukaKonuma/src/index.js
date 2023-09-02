@@ -1,23 +1,28 @@
+const SkillTree = require("./SkillTree");
+
 class Survivor {
   name;
   skillTree;
-  leftHands = null;
+  stats = new SkillTree();
+  bag = new Bag();
   rightHand = null;
+  leftHands = null;
   wound = 0;
-  actions = 3;
-  constructor(name, skillTree, bag) {
+  xp = 0;
+  constructor(name) {
     this.name = name;
-    this.skillTree = skillTree;
   }
 }
 
-class Rules {}
+class Bag {}
 
-class SkillTree {}
-
-class Item {
-  static damage = [baseballBat, pan, ax, pistol];
-  static useful = [waterBottle, food, medKit];
+class Items {
+  static damageItems = [
+    (baseballBat = { damage: 2, duration: 2 }),
+    (pan = { damage: 1, duration: 3 }),
+    (ax = { damage: 2, duration: 4 }),
+    (pistol = { damage: 3, ammo: 0, duration: Number.POSITIVE_INFINITY }),
+  ];
+  static useful = [waterBottle, food, medKit, bigMedKit];
 }
 //bag carrega até 7 itens
-class Bag {}
