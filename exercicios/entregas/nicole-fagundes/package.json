@@ -1,0 +1,14 @@
+{
+  "name": "desafio-zombicide",
+  "version": "1.0.0",
+  "description": "projeto II",
+  "main": "resolucao.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "nicole-fagundes",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
