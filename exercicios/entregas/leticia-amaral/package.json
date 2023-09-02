@@ -1,0 +1,14 @@
+{
+  "name": "leticia-amaral",
+  "version": "1.0.0",
+  "description": "projeto II - Imerção Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Letícia Amaral",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
