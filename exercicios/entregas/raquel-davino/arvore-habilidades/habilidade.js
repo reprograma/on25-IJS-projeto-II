@@ -1,0 +1,6 @@
+class Habilidade {
+    
+   static arvoreHabilidades = {
+
+   }
+}
