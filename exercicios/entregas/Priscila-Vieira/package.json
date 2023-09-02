@@ -1,0 +1,14 @@
+{
+  "name": "priscila-vieira",
+  "version": "1.0.0",
+  "description": "",
+  "main": "resolucao.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
