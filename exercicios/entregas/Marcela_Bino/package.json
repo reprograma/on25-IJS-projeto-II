@@ -1,0 +1,14 @@
+{
+  "name": "marcela-bino",
+  "version": "1.0.0",
+  "description": "projeto",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "marcela bino",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
