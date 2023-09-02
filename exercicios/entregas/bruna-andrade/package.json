@@ -1,0 +1,14 @@
+{
+  "name": "bruna-andrade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "resolucao.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
