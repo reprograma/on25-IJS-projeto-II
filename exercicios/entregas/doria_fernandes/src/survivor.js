@@ -4,21 +4,23 @@ Sobreviventes
 */
 
 class Survivor {
-    name;
-    injury = 0;
 
-    constructor(name) {
-        this.name = name;
-        this.injury = 0;
-        this.habilidades = [];
-        this.acaoRestante = 3;
-        this.equipamentosMaos = [];
-        this.equipamentosReserva = [];
+    constructor(nome) {
+        this.nome = nome;
+        this.ferimentos = 0;
+        this.acoesPorTurno = 3;
+        this.equipamentos = {
+            maos: [],
+            reserva: []
+        };
+        this.experiencia = 0;
+        this.nivel = 'Azul';
     }
 
     sofrerFerimento() {
         if (this.ferimentos < 3) {
             this.ferimentos++;
+            // deve diminuir a quantidade de equipamentos, implementar
             if (this.ferimentos === 3) {
                 console.log("Sobrevivente morreu...")
             }
@@ -40,6 +42,19 @@ class Survivor {
                 this.ferimentos--;
             }
             this.acaoRestante--;
+        }
+    }
+
+    ganharExperiencia() {
+        this.experiencia++;
+        if (this.experiencia >= 6 && this.nivel === "Azul") {
+            this.nivel = "Amarelo";
+        }
+        if (this.experiencia >= 18 && this.nivel === "Amarelo") {
+            this.nivel = "Laranja";
+        }
+        if (this.experiencia >= 42 && this.nivel === "Laranja") {
+            this.nivel = "Vermelho";
         }
     }
 
