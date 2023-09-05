@@ -31,3 +31,5 @@ class Zombie {
     console.log(`Aconteceu o ataque de voce levou 1 de dano ${survivor.wound}`);
   }
 }
+
+module.exports = Zombie;
