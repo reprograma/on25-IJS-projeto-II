@@ -6,12 +6,25 @@ Sobreviventes
 class Survivor {
   name;
   injury = 0;
+  #MAX_OF_INJURIES = 3
+  #ACTIONS = 3;
 
   constructor(name) {
     this.name = name;
-    this.injury = 0;
+  }
+
+  get action() {
+    return this.#ACTIONS;
+  }
+
+  getHurt() {
+    if (this.injury === this.#MAX_OF_INJURIES) {
+      return `${this.name}, você perdeu!`;
+    } else {
+      this.injury++;
+      return `${this.name}, você foi atingido(a) pela ${this.injury}ª vez.`;
+    }
   }
 }
 
-const survivor1 = new Survivor('Laíssa');
-console.log(survivor1)
+module.exports = {Survivor};
