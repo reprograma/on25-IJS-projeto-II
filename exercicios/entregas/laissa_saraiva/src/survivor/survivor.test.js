@@ -1,4 +1,4 @@
-const { Survivor } = require("./survivor");
+const { Survivor } = require("./Survivor");
 
 describe("Test de Class Survivor", () => {
   let survivor1;
