@@ -36,6 +36,17 @@ class Survivor {
         }
     }
 
+    killsZombine(){
+        this.experience++;
+        if(this.experience === 6){
+            this.level = "Yellow";
+        } else if (this.experience === 18){
+            this.level = "Orange";
+        } else if (this.experience === 42){
+            this.level = "Red";
+        }
+    }
+
     dies() {
         console.log(`${this.name} is dead`);
 
