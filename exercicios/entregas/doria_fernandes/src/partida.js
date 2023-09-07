@@ -1,7 +1,7 @@
-class Match{
+class Match {
     constructor() {
         this.sobreviventes = [];
-        this.nivelPartida = 1; // Inicializa o nível da partida como 1
+        this.nivelPartida = 1; 
     }
 
     adicionarSobrevivente(sobrevivente) {
@@ -9,7 +9,6 @@ class Match{
     }
 
     atualizarNivelPartida() {
-        // Determine o nível mais alto dos sobreviventes vivos
         let nivelMaisAlto = "Azul";
         for (const sobrevivente of this.sobreviventes) {
             if (sobrevivente.nivel === "Vermelho") {
