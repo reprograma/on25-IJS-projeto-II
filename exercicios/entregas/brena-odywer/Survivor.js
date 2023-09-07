@@ -58,14 +58,11 @@ class Survivor {
             Survivor.allSurvivors.splice(indexToRemove, 1);
           }
         }
-    }
-
-
-
-
-class SkillTree extends Survivor {
-
 }
 
 
-module.exports = { Survivor, SkillTree }
+
+
+
+
+module.exports = { Survivor }

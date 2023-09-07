@@ -1,7 +1,7 @@
 const { Survivor } = require("./Survivor")
-// const { SkillTree } = require("./resolucao")
+// const { SkillTree } = require("./SkillTree")
 const { Gear } = require("./Gear")
-
+const { Zombie } = require("./Zombie")
 
 
 let brena = new Survivor ("brena")

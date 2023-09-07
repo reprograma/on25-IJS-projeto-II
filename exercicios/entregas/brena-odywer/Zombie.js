@@ -13,3 +13,5 @@ class Zombie {
       }
     }
   }
+
+  module.exports = { Zombie }
