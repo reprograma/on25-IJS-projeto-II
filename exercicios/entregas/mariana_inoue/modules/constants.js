@@ -1,11 +1,17 @@
-export const LEVEL = Object.freeze({ 
-    BLUE: 0,
-    YELLOW: 6,
-    ORANGE: 18,
-    RED: 42
-  });
+// export const LEVEL = Object.freeze({ 
+//     BLUE: 0,
+//     YELLOW: 6,
+//     ORANGE: 18,
+//     RED: 42
+//   });
 
-  export default class LevelStage {
+ export class LevelStage {
+    static BLUE = 'BLUE';
+    static YELLOW = 'YELLOW' ;
+    static ORANGE = 'ORANGE';
+    static RED = 'RED';
+  }
+  export  class LevelsPoints {
     static BLUE = 0;
     static YELLOW = 6;
     static ORANGE = 18;

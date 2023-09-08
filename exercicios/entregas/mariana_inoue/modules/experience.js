@@ -1,52 +1,67 @@
-import  LevelStage  from "./constants/LevelStage";
+import { LevelsPoints } from "./constants.js";
 
-export class Experience {
-    points
+export class Experience extends LevelsPoints {
+    points = 0
+    // constructor.points) {
+    //     super()
 
-    constructor(points,levelStage) {
-        if(!(levelStage instanceof LevelStage)){
-            return new Error('Erro')
+    // }
+
+    attackZombie(zombie) {
+
+        if (zombie === true) {
+            this.points++
+            console.log(`You heat the zombie, now you have ${this.points}`)
+console.log(Experience.RED)
+
+        } else {
+            console.log(`Run run and be quiet!`)
         }
-        this.points = points
-        this.levelStage = levelStage
     }
 
-    increaseExperience() {
-        this.points += 1
 
-        switch (points) {
-            case points === 0:
-                LevelStage.BLUE
-                console.log("AZUL");
+
+
+    surviverLevelUp() {
+        let levelUp = this.points
+        switch (levelUp) {
+            case levelUp === Experience.BLUE && levelUp <= 6:
+                // levelUp >= Experience.BLUE && levelUp <= 6
+                Experience.BLUE
+                console.log(this.points)
+                console.log('Points are not sufficient to levelup');
                 break;
-            case points >= 6:
-                LevelStage.YELLOW
-                console.log("AMARELO");
+            case 'YELLOW':
+                this.points >= Experience.YELLOW && this.points <= 18
+                console.log(`Your LEVEL is ${Experience.YELLOW} and there ${this.points} points saved`);
+                console.log(Experience.YELLOW)
                 break;
-            case points >= 18:
-                LevelStage.ORANGE
-                console.log("ORANGE");
+            case 'ORANGE':
+                Experience.ORANGE ? this.points = 2 : undefined
+                console.log(`Your LEVEL is ${Experience.ORANGE} and there ${this.points} points saved`);
                 break;
-            case points >= 42:
-                LevelStage.RED
-                console.log("RED");
+            case 'RED':
+                Experience.RED ? this.points = 3 : undefined
+                console.log(`Your LEVEL is ${Experience.RED} and there ${this.points} points saved`);
                 break;
             default:
-                console.log("Level desconhecido");
+                console.log('What is your level?')
+                console.log(levelUp)
+                break;
         }
-
-        console.log(`O seu nivel é' ${this.points}`)
-
     }
-
-    decreaseExperience() {
-        return this.points -= 1
-    }
-
-
-
-
 }
 
+const surviverLevel = new Experience()
 
-const points1 = new Experience(0)
+
+surviverLevel.attackZombie(true)
+surviverLevel.attackZombie(true)
+// surviverLevel.attackZombie(true)
+// surviverLevel.attackZombie(true)
+// surviverLevel.attackZombie(true)
+// surviverLevel.attackZombie(true)
+// surviverLevel.attackZombie(true)
+// surviverLevel.attackZombie(true)
+console.log(surviverLevel)
+surviverLevel.surviverLevelUp('YELLOW')
