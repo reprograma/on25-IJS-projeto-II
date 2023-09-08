@@ -6,6 +6,9 @@
   "author": "allanina",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "jest": "^29.6.4"
   }
