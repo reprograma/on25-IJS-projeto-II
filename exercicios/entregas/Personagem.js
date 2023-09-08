@@ -41,7 +41,7 @@ class Personagem {
 
     realizarAcao() {
         if (this.acoesRestantes > 0 && this.verificaVivo()) {
-            console.log(`Ação realizada.`);
+            console.log(`AÃ§Ã£o realizada.`);
             this.acoesRestantes -= 1;
         } else {
             return false;
