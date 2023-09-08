@@ -5,14 +5,15 @@ const { ArvoreHabilidades } = require('./ArvoreHabilidades');
 class Sobrevivente extends Personagem {
     limiteFerimentos = 3;
 
-    constructor(nome) {
+    constructor(nome, partida) {
         super();
         this.nome = nome;
-        this.habilidades = [];
+        this.partida = partida;
         this.acoesRestantes = 3;
         this.equipamentos = new Equipamentos();
         this.arvoreHabilidades = new ArvoreHabilidades();
-        this.nivel = this.arvoreHabilidades.desbloquearHabilidade('Azul');
+        this.habilidades = this.arvoreHabilidades.desbloquearHabilidade('Azul');
+        this.nivel = 'Azul';
         this.experiencia = 0;
     }
 

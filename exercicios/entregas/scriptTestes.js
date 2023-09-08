@@ -5,8 +5,8 @@ const { Zumbi } = require('./Zumbi');
 // Partida 1:
 console.log("#### Partida 1 ####");
 const partida = new Partida();
-const sobrevivente1 = new Sobrevivente("Daphne");
-const sobrevivente2 = new Sobrevivente("Velma");
+const sobrevivente1 = new Sobrevivente("Daphne", partida);
+const sobrevivente2 = new Sobrevivente("Velma", partida);
 
 partida.addSobrevivente(sobrevivente1);
 partida.addSobrevivente(sobrevivente2);
@@ -33,8 +33,8 @@ partida.registro.listarEventos();
 // Partida 2:
 console.log("\n#### Partida 2 ####");
 const partida2 = new Partida();
-const sobrevivente3 = new Sobrevivente("Lilo");
-const sobrevivente4 = new Sobrevivente("Stitch");
+const sobrevivente3 = new Sobrevivente("Lilo", partida2);
+const sobrevivente4 = new Sobrevivente("Stitch", partida2);
 
 partida2.addSobrevivente(sobrevivente3);
 partida2.addSobrevivente(sobrevivente4);
