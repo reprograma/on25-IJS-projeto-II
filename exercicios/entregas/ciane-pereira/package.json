@@ -1,0 +1,14 @@
+{
+  "name": "ciane-pereira",
+  "version": "1.0.0",
+  "description": "projeto",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
