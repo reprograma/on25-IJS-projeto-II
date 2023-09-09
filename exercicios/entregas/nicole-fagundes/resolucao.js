@@ -1,17 +1,27 @@
-// Sobreviventes
+const Survivor = require("./Survivor");
 
-// 1. Criar classe de Sobreviventes
+const sobrevivente = new Survivor("nicole");
+console.log(sobrevivente);
+// sobrevivente.wounds(true);
+// console.log(sobrevivente);
 
-class Survivor {
-    name;
-    wound = 0;
-    // árvore de habilidades
+// sobrevivente.wounds(true);
+// console.log(sobrevivente);
 
-    constructor(name){
-        this.name = name;
-    }
+// sobrevivente.wounds(true);
+// console.log(sobrevivente);
 
-    // wounds(){
-    //     if()
-    // }
-}
+// sobrevivente.wounds(true);
+// console.log(sobrevivente);
+
+sobrevivente.myEquipments("bastão de baseball");
+sobrevivente.myEquipments("frigideira");
+sobrevivente.myEquipments("machado");
+sobrevivente.myEquipments("pistola");
+sobrevivente.myEquipments("garrafa de água");
+sobrevivente.myEquipments("comida");
+sobrevivente.myEquipments("kit primeiros socorros");
+console.log(sobrevivente);
+
+sobrevivente.chooseEquipment("bastão de baseball");
+sobrevivente.chooseEquipment("tênis");
