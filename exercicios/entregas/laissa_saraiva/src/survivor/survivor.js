@@ -1,29 +1,23 @@
-/*
-Sobreviventes
-1. criar Classe Surviver
-*/
+const { Levels } = require("../Levels/Levels");
 
 class Survivor {
   name;
   injury = 0;
-  #MAX_OF_INJURIES = 3
+  MAX_OF_INJURIES = 3
   #ACTIONS = 3;
+  level;
 
   constructor(name) {
     this.name = name;
+    this.level = new Levels();
   }
 
   get action() {
     return this.#ACTIONS;
   }
 
-  getHurt() {
-    if (this.injury === this.#MAX_OF_INJURIES) {
-      return `${this.name}, você perdeu!`;
-    } else {
-      this.injury++;
-      return `${this.name}, você foi atingido(a) pela ${this.injury}ª vez.`;
-    }
+  addInjury() {
+    this.injury += 1;
   }
 }
 
