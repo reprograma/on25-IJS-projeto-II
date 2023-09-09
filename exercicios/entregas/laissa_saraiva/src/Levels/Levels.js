@@ -20,10 +20,4 @@ class Levels {
   }
 }
 
-const nivel1 = new Levels();
-nivel1.experience = 18
-console.log(nivel1);
-console.log(nivel1.currentLevel);
-console.log(nivel1.setCurrentLevel());
-console.log(nivel1.currentLevel);
 module.exports = { Levels };
