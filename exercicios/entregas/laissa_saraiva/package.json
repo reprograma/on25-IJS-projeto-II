@@ -1,0 +1,14 @@
+{
+  "name": "laissa_saraiva",
+  "version": "1.0.0",
+  "description": "projeto",
+  "main": "resolucao.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "laissasc",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
