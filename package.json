@@ -1,0 +1,15 @@
+{
+  "name": "on25-IJS-projeto-II",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/allanina/on25-IJS-projeto-II",
+  "author": "allanina",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
