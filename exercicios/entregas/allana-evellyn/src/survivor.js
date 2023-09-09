@@ -31,7 +31,7 @@ class Survivor {
   }
 
   addBagEquipment(equipment) {
-    if (this.bagEquipment.length < 7) {
+    if (this.bagEquipment.length <= 7) {
       this.bagEquipment.push(equipment);
       console.log(`You stored ${equipment} in your bag!`);
     } else {
@@ -42,7 +42,7 @@ class Survivor {
   }
 
   addHandEquipment(equipment) {
-    if (this.handEquipment.length < 2) {
+    if (this.handEquipment.length <= 2) {
       this.handEquipment.push(equipment);
       console.log(`You picked a ${equipment} on your hand!`);
     } else {
