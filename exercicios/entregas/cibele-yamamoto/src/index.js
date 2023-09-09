@@ -21,36 +21,6 @@ console.log(partida1)
 
 
 /*
-#### Sobreviventes
-Se machucam e até morrem. 
--nome
--ferimentos = 0 
-Se ferimentos >= 3, morre imediatamente
-- acoesPorTurno = 3
-
-- qtdArvoreHabilidades = 1
-(começa com uma Árvore de Habilidades)
-
-#### Equipamentos
-Cada sobrevivente: 
-2 equip **mãos**
-5 equip **reserva**.
-
-Equipamentos podem ser **itens utilizados para lutar,** como:
-- bastão de baseball,
-- frigideira,
-- machado,
-- pistola;
-
-ou itens utilitários, como:
-- garrafa de água,
-- comida,
-- kit de primeiros socorros.
-
-==> Tipo: luta ou utilitário
-*/
-
-/*
 
 ===> If ferminento + 1, capacidade carregar equip -1
 > ⛔ A cada ferimento sofrido, o número de equipamentos que o sobrevivente pode carregar é reduzido em 1. Se o sobrevivente tiver 
@@ -127,28 +97,6 @@ reinicia pela árvore de habilidades uma segunda vez:
 ⛔
 ===> **O JOGO PODE ACABAR QUANDO UM SOBREVIVENTE CHEGA NO 150**
 
-#### Registros
-===> registros
-O jogo inclui um histórico contínuo de eventos que ocorreram à medida que foi jogado. Registros relevantes:
-
-- A hora em que a partida começou;
-- Novo sobrevivente adicionado à partida;
-- Sobrevivente adquire um Equipamento.
-- Sobrevivente sofre um ferido.
-- Sobrevivente morre.
-- Sobe de nível.
-- O nível do partida muda.
-- Partida finalizada.
-- Um sobrevivente adquire uma nova habilidade.
-
-## Extras
-#### Zumbis
-ferimentos = 0
-
-===> Se um zumbi sofre 2 ferimentos, ele morre imediatamente; 
-quaisquer ferimentos adicionais serão ignorados. 
-
-===> Cada zumbi pode realizar 1 ação por turno.
 
 #### Partidas com zumbis
 ===> Cada partida inicia com 2 zumbis para cada sobrevivente existente no jogo.

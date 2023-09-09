@@ -1,8 +1,10 @@
 const Sobrevivente = require('../Sobrevivente/Sobrevivente');
+const Zumbi = require('../Zumbi/Zumbi');
 
 class Partida {
     sobreviventes; // array com os sobreviventes da partida
     nivelDificuldade; // nível de dificuldade da partida
+    zumbis; // array com zumbis da partida
 
     static registros =[]
 
@@ -10,6 +12,8 @@ class Partida {
         if(this.validarSobreviventes(sobreviventes)) {
             this.sobreviventes = sobreviventes;
             this.nivelDificuldade = this.calcNivelDificuldade(sobreviventes);
+            this.zumbis = this.criarZumbis(sobreviventes);
+            
         } else {
             console.log("Não foi possível iniciar a partida. Sobreviventes inválidos!")
         }
@@ -41,6 +45,20 @@ class Partida {
             }
         })
         return maiorNivel;
+    }
+
+    criarZumbis(sobreviventes) {
+        // ===> Cada partida inicia com 2 zumbis para cada sobrevivente existente no jogo.
+        let qtdZumbis = len(sobreviventes)*2;
+        console.log("Temos " + qtdZumbis + "!");
+        for(let i=0; i<qtdZumbis; i++) {
+            this.criarZumbis()
+        }
+    }
+
+    criarZumbi() {
+        const novoZumbi = new Zumbi('zumbi' + len(len(this.zumbis)));
+        this.zumbis.push(novoZumbi);
     }
 
     adicionarSobreviente(Sobrevivente) {
@@ -83,6 +101,5 @@ module.exports = Partida;
 ===> Cada vez que o sobrevivente **mata um zumbi, ele ganha 1 ponto de experiência**
 
 ===> Cada zumbi pode realizar 1 ação por turno.
-===> Cada partida inicia com 2 zumbis para cada sobrevivente existente no jogo.
 ===>A cada rodada são adicionados novos zumbis de acordo com o nível do jogo.
 */
