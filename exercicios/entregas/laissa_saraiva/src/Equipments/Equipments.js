@@ -18,4 +18,4 @@ class Equipments {
   }
 }
 
-module.exports = { Equipments };
+module.exports = {Equipments};

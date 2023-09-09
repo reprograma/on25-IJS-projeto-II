@@ -1,4 +1,4 @@
-const {Equipments} = require("./Equipments");
+const { Equipments } = require("./Equipments")
 
 describe("Test de Equipments Class", () => {
   let equipments;
