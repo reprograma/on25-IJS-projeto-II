@@ -7,6 +7,8 @@ class Sobrevivente {
     qtdArvoreHabilidades;
     equipMaxMaos;
     equipMaxReserva;
+    equipMaos;
+    equipReserva;
 
     static habilidades = ["+1 Dano" , "+1 Equip-Geral", "+1 Mov", "+1 Equip-Maos", "+1 Vidas"];
     static niveis = [
@@ -54,11 +56,24 @@ class Sobrevivente {
         this.qtdArvoreHabilidades = 1;
         this.equipMaxMaos = 2;
         this.equipMaxReserva = 5;
+        this.equipMaos = [];
+        this.equipReserva = [];
+    }
+
+    adicionarEquipamento(equipamento, local) {
+        // fazer validacoes de limite de equipamentos
+        if(local=="mao") {
+            this.equipMaos.push(equipamento);
+        } else if (local=="reserva") {
+            this.equipReserva.push(equipamento);
+        } else {
+            console.log("Opção de local inválida!")
+        }
     }
 
 }
 
-export default Sobrevivente;
+module.exports = Sobrevivente;
 
 /*
 **O sobrevivente sempre acerta o ferimento e ganha 1 ponto de experiência quando mata 

@@ -1,16 +1,23 @@
-import Sobrevivente from './Sobrevivente.js';
+const Sobrevivente = require('./Sobrevivente/Sobrevivente');
+const Partida = require('./Partida/Partida');
 
 const player1 = new Sobrevivente("player1");
 const player2 = new Sobrevivente("player2");
 const player3 = new Sobrevivente("player3");
 const player4 = new Sobrevivente("player4");
 
+/*
 console.log(player1);
 console.log(player2);
 console.log(player3);
 console.log(player4);
+*/ 
 
-const partida1 = new Partida();
+let sobreviventes = [player1, player2, player3, player4];
+
+const partida1 = new Partida(sobreviventes);
+
+console.log(partida1)
 
 
 /*

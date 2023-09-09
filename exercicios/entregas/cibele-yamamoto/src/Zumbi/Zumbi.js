@@ -6,7 +6,6 @@ class Zumbi {
         this.nome = nome;
         this.ferimentos = 0;
     }
-
 }
 
 /*
