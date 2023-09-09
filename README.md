@@ -23,31 +23,24 @@ Criar um projeto prático utilizando os conceitos de SOLID e Clean Code.
 O que veremos na aula de hoje?
 
 - [Tema da Aula](#tema-da-aula)
-
-  - [Instruções](#instruções)
-  - [Objetivo](#objetivo)
-  - [Resumo](#resumo)
-
+    - [Instruções](#instruções)
+    - [Objetivo](#objetivo)
+    - [Resumo](#resumo)
 - [Conteúdo](#conteúdo)
-
   - [Desafio](#desafio)
-
-    - [Sobreviventes](#sobreviventes)
-    - [Equipamentos](#equipamentos)
-    - [Partidas](#partidas)
-    - [Experiência e Níveis](#experiência-e-níveis)
-    - [Árvore de Habilidades](#árvore-de-habilidades)
-    - [Registros](#registros)
-
+      - [Sobreviventes](#sobreviventes)
+      - [Equipamentos](#equipamentos)
+      - [Partidas](#partidas)
+      - [Experiência e Níveis](#experiência-e-níveis)
+      - [Árvore de Habilidades](#árvore-de-habilidades)
+      - [Registros](#registros)
   - [Extras](#extras)
-
-    - [Zumbis](#zumbis)
-    - [Partidas com zumbis](#partidas-com-zumbis)
-    - [Ataque](#ataque)
-
-  - [Exercícios](#exercícios)
-  - [Material da aula](#material-da-aula)
-  - [Links Úteis](#links-úteis)
+      - [Zumbis](#zumbis)
+      - [Partidas com zumbis](#partidas-com-zumbis)
+      - [Ataque](#ataque)
+    - [Exercícios](#exercícios)
+    - [Links Úteis](#links-úteis)
+    - [Contatos](#contatos)
 
 # Conteúdo
 Link do jogo Zombicide: https://www.youtube.com/watch?v=sVo-SRAZYOA
