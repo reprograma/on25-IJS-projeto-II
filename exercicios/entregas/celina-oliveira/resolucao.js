@@ -4,7 +4,6 @@ class Sobrevivente {
   constructor (nome) {
         this.nome = nome;
         this.ferimento = 0;
-        this.capacidadeEquipamentos = 7;
         this.experiencia = 0;
         this.nivel = "Azul";
         this.acoesPorTurno = 3;
@@ -20,7 +19,7 @@ class Sobrevivente {
             return `${this.nome} morreu!`;
         } else if (this.acoesPorTurno > 0) {
             this.acoesPorTurno--;
-            const acao = Math.floor(Math.random() * 3); // Simulando ações aleatórias
+            const acao = Math.floor(Math.random() * 3);
             if (acao === 0) {
                 this.ferimentos++;
                 return `${this.nome} sofreu um ferimento!`;
