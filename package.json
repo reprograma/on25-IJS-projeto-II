@@ -1,0 +1,18 @@
+{
+  "name": "jacira-sousa",
+  "version": "1.0.0",
+  "description": "Projeto II",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "jacira-sousa",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
