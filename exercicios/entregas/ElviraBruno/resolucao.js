@@ -8,12 +8,13 @@ class Sobrevivente {
     this.nivel = "Azul";
     this.experiencia = 0;
     this.arvoreHabilidades = [];
+    this.capacidadeCarregamento = 7; // Defina a capacidade de carregamento no construtor
   }
 
   adicionarEquipamento(equipamento) {
     if (this.equipamentosMaos.length < 2) {
       this.equipamentosMaos.push(equipamento);
-    } else if (this.equipamentosMochila.length < 3) {
+    } else if (this.equipamentosMochila.length < 5) {
       this.equipamentosMochila.push(equipamento);
     } else {
       console.log(
@@ -22,23 +23,16 @@ class Sobrevivente {
     }
   }
 
-      removerEquipamentoMaos(equipamento) {
-        const index = this.equipamentosMaos.indexOf(equipamento);
-        if (index !== -1) {
-          this.equipamentosMaos.splice(index, 1);
-        } else {
-          console.log(`Amigo '${this.nome}' Não encontrou o equipamento nas mãos.`);
-        }
-      }
-    
-      removerEquipamentoMochila(equipamento) {
-        const index = this.equipamentosMochila.indexOf(equipamento);
-        if (index !== -1) {
-          this.equipamentosMochila.splice(index, 1);
-        } else {
-          console.log(`Amigo '${this.nome}' Não encontrou o equipamento na mochila.`);
-        }
-      }
+  removerEquipamentoMaos(equipamento) {
+    const index = this.equipamentosMaos.indexOf(equipamento);
+    if (index !== -1) {
+      this.equipamentosMaos.splice(index, 1);
+      console.log(`Equipamento '${equipamento}' removido das mãos de '${this.nome}'.`);
+    } else {
+      console.log(`Amigo '${this.nome}' Não tem nenhum equipamento '${equipamento}' nas mãos.`);
+    }
+  }
+
   ferir(dano) {
     if (this.ferimentos < 3) {
       this.ferimentos += dano;
@@ -55,6 +49,28 @@ class Sobrevivente {
     } else {
       console.log(`Amigo '${this.nome}' já foi morto e não pode ser ferido novamente.`);
     }
+  }
+
+  adicionarExperiencia(pontos) {
+    this.experiencia += pontos;
+
+    if (this.experiencia >= 0 && this.experiencia < 7) {
+      this.subirDeNivel("Azul");
+    } else if (this.experiencia >= 7 && this.experiencia < 19) {
+      this.subirDeNivel("Amarelo");
+    } else if (this.experiencia >= 19 && this.experiencia < 43) {
+      this.subirDeNivel("Laranja");
+    } else if (this.experiencia >= 43 && this.experiencia < 129) {
+      this.subirDeNivel("Vermelho");
+    } else if (this.experiencia >= 129) {
+      this.subirDeNivel("Parabéns, você salvou a humanidade e exterminou os Zumbis");
+    }
+  }
+
+  subirDeNivel(novoNivel) {
+    console.log(`Parabéns, '${this.nome}' subiu para o nível ${novoNivel}!`);
+    this.nivel = novoNivel;
+    this.experiencia = 0; // Reseta a experiência após subir de nível
   }
 }
 
