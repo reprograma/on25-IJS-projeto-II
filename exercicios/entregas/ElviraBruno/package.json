@@ -1,0 +1,14 @@
+{
+  "name": "elvirabruno",
+  "version": "1.0.0",
+  "description": "Projeto II - IJS - On25 {Reprograma}",
+  "main": "resolucao.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Elvira Bruno",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
