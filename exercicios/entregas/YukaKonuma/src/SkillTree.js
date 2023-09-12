@@ -9,11 +9,11 @@ class SkillTree {
   lv = this.typeLv.blue;
 
   lvUP(xp) {
-    if (xp == 6) {
+    if (xp === 6) {
       lv = SkillTree.typeLv.yellow;
-    } else if (xp == 18) {
+    } else if (xp === 18) {
       lv = SkillTree.typeLv.orange;
-    } else if (xp == 42) {
+    } else if (xp === 42) {
       lv = SkillTree.typeLv.red;
     } else console.log("Ainda nao da para dar LvUP");
   }

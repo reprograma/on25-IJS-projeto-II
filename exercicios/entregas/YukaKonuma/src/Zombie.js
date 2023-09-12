@@ -26,9 +26,15 @@ class Zombie {
 
     const roll = Number(Math.random().toFixed(1));
     if (roll <= this.lv) {
+      this.actions--;
       survivor.wound++;
+      console.log(
+        `Aconteceu o ataque de voce levou 1 de dano ${survivor.wound}`
+      );
+    } else {
+      this.actions--;
+      console.log("O zumbi errou o ataque");
     }
-    console.log(`Aconteceu o ataque de voce levou 1 de dano ${survivor.wound}`);
   }
 }
 
