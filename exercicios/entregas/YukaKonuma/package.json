@@ -1,0 +1,14 @@
+{
+  "name": "on25-ijs-projeto-ii",
+  "version": "1.0.0",
+  "description": "game zumbi",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ellie Yuka",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
