@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "<h1 align=\"center\">\r   <img src=\"assets/reprograma-fundos-claros.png\" alt=\"logo reprograma\" width=\"500\">\r </h1>",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": " test "
+    "test": "jest --config=jest.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,15 @@
   },
   "homepage": "https://github.com/MicheleFeitosa/on25-IJS-projeto-II#readme",
   "devDependencies": {
+    "@babel/core": "^7.22.20",
+    "@babel/preset-env": "^7.22.20",
+    "babel-jest": "^29.7.0",
     "jest": "^29.6.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
   }
 }
